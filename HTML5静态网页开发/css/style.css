@@ -4,51 +4,48 @@ header > .header { width: 1200px; height: 80px; margin: 0 auto; }
 header > .header > a > img { height: 31px; width: 141px; float: left; margin-top: 24px; }
 header > .header > .nav-word { height: 80px; width: 500px; float: right; }
 header > .header > .nav-word > .word { height: 80px; width: 125px; float: left; line-height: 80px; color: white; text-align: center; }
-header > .header > .nav-word > .word:hover { background: #f46208; color: black; font-weight: bold; }
+header > .header > .nav-word > .word:hover { background: #f46208; color: black; font-weight: bold; cursor: pointer; }
 
 /* 导航 */
-nav { width: 100%; height: 670px; background: url('../img/banner.jpg') no-repeat center center; background-size: 100% 100%; }
+.banner { width: 100%; height: 670px; background: url('../img/banner.jpg') no-repeat center center; background-size: 100% 100%; }
 
 /* 主体 */
-section .word-title { text-align: center; font-size: 48px; color: orange; height: 50px; line-height: 50px; padding-top: 150px; margin-bottom: 40px; letter-spacing: 7px; }
-section .word-article { width: 800px; font-size: 14px; color: black; margin: 0 auto; text-align: center; margin-bottom: 60px; line-height: 25px; }
+.word-title { text-align: center; font-size: 48px; color: #f46208; height: 50px; line-height: 50px; padding-top: 150px; margin-bottom: 40px; letter-spacing: 7px; }
+.word-article { width: 800px; font-size: 14px; color: black; margin: 0 auto; text-align: center; margin-bottom: 60px; line-height: 25px; }
 
 /* Portfolio区 */
-section > .portfolio { height: 1100px; width: 100%; }
-section > .portfolio > .portfolio-word { height: 550px; width: 1000px; margin: 0 auto; }
-section > .portfolio > .portfolio-word > .portfolio-word-block { text-align: center; width: 1000px; height: 30px; }
-section > .portfolio > .portfolio-word > .portfolio-word-block > .portfolio-word-block-intro { border: 1.5px solid orange; font-size: 18px; width: auto; height: 22px; line-height: 22px; color: orange; display: inline-block; padding: 5px 4px; margin-right: 10px; }
-section > .portfolio > .portfolio-img { height: 550px; width: 100%; background: url(../img/portfolio-nav-img.jpg) no-repeat center center; background-size: 100% 100%; }
+.portfolio { height: 1100px; width: 100%; }
+.portfolio > .portfolio-word { height: 550px; width: 1000px; margin: 0 auto; }
+.portfolio > .portfolio-word > .portfolio-word-block { text-align: center; width: 1000px; height: 30px; }
+.portfolio > .portfolio-word > .portfolio-word-block > .portfolio-word-block-intro { border: 1.5px solid #f46208; font-size: 18px; width: auto; height: 22px; line-height: 22px; color: #f46208; display: inline-block; padding: 5px 4px; margin-right: 10px; }
+.portfolio > .portfolio-word > .portfolio-word-block > .portfolio-word-block-intro:hover { color: white; background: #f46208; cursor: pointer; }
+.portfolio > .portfolio-img { height: 550px; width: 100%; background: url(../img/portfolio-nav-img.jpg) no-repeat center center; background-size: 100% 100%; }
 
 /* stats区 */
-section > .stats { height: 650px; width: 100%; }
-section > .stats > .stats-word { height: 650px; width: 1000px; margin: 0 auto; }
-section > .stats > .stats-word > .stats-word-img { width: 1000px; height: 200px; }
-section > .stats > .stats-word > .stats-word-img > .stats-word-img-intro { width: 25%; float: left; text-align: center; }
-section > .stats > .stats-word > .stats-word-img > .stats-word-img-intro > .stats-word-img-intro-en { margin: 20px 0; font-weight: bold; }
-section > .stats > .stats-word > .stats-word-img > .stats-word-img-intro > .stats-word-img-intro-num { font-size: 48px; color: orange; height: 50px; line-height: 50px; letter-spacing: 7px; }
+.stats { height: 650px; width: 100%; }
+.stats > .stats-word { height: 650px; width: 1000px; margin: 0 auto; }
+.stats > .stats-word > .stats-word-img { width: 1000px; height: 200px; }
+.stats > .stats-word > .stats-word-img > .stats-word-img-intro { width: 25%; float: left; text-align: center; }
+.stats > .stats-word > .stats-word-img > .stats-word-img-intro > .stats-word-img-intro-en { margin: 20px 0; font-weight: bold; }
+.stats > .stats-word > .stats-word-img > .stats-word-img-intro > .stats-word-img-intro-num { font-size: 48px; color: #f46208; height: 50px; line-height: 50px; letter-spacing: 7px; }
 
 /* team区 */
-section > .team { height: 650px; width: 100%; background: #2e2e2e; color: white; }
-section > .team > .team-word { width: 1000px; margin: 0 auto; }
-section > .team > .team-word > .word-article { color: white; }
-section > .team > .team-word > .team-word-img { height: 300px; width: 1000px; margin: 0 auto; }
-section > .team > .team-word > .team-word-img > .team-word-img-intro { width: 33%; text-align: center; float: left; }
-section > .team > .team-word > .team-word-img > .team-word-img-intro > .team-word-img-intro-er { padding: 10px 0; }
-section > .team > .team-word > .team-word-img > .team-word-img-intro > .team-word-img-intro-info { font-size: 13px; width: 80%; margin: 0 auto; }
+.team { height: 750px; width: 100%; background: #2e2e2e; color: white; }
+.team > .team-word { width: 1000px; margin: 0 auto; }
+.team > .team-word > .word-article { color: white; }
+.team > .team-word > .team-word-img { height: 300px; width: 1000px; margin: 0 auto; }
+.team > .team-word > .team-word-img > .team-word-img-intro { width: 33%; text-align: center; float: left; }
+.team > .team-word > .team-word-img > .team-word-img-intro > .team-word-img-intro-er { padding: 10px 0; }
+.team > .team-word > .team-word-img > .team-word-img-intro > .team-word-img-intro-info { font-size: 13px; width: 80%; margin: 0 auto; }
 
 /* contactUs区 */
-section > .contactUs { height: 750px; width: 100%; }
-section > .contactUs > .contactUsWord { width: 1000px; margin: 0 auto; }
-section > .contactUs > .contactUsWord > input:nth-of-type(1), section > .contactUs > .contactUsWord > input:nth-of-type(2) { width: 450px; height: 40px; color: gray; text-indent: .5em; }
-section > .contactUs > .contactUsWord > input:nth-of-type(1) { margin-left: 35px; margin-right: 20px; }
-section > .contactUs > .contactUsWord > textarea { display: block; color: gray; width: 930px; margin: 20px auto; overflow: hidden; text-indent: .5em}
-section > .contactUs > .contactUsWord > input:nth-of-type(3) { display: block; width: 150px; margin: 0 auto; height: 40px;background: #f46208;color: white;line-height: 40px;outline: none;border: none;word-spacing: .8em;font-size: 14px;border: 1px solid #f46208;}
-section > .contactUs > .contactUsWord > input:nth-of-type(3):hover {
-	border: 1px solid #f46208;
-	color: #f46208;
-	background: white;
-}
+.contactUs { height: 750px; width: 100%; }
+.contactUs > .contactUsWord { width: 1000px; margin: 0 auto; }
+.contactUs > .contactUsWord > input:nth-of-type(1), .contactUs > .contactUsWord > input:nth-of-type(2) { width: 450px; height: 40px; color: gray; text-indent: .5em; }
+.contactUs > .contactUsWord > input:nth-of-type(1) { margin-left: 35px; margin-right: 20px; }
+.contactUs > .contactUsWord > textarea { display: block; color: gray; width: 930px; margin: 20px auto; overflow: hidden; text-indent: .5em }
+.contactUs > .contactUsWord > input:nth-of-type(3) { display: block; width: 150px; margin: 0 auto; height: 40px; line-height: 40px;background: #f46208; color: white;  outline: none; border: none; word-spacing: .8em; font-size: 14px; border: 1px solid #f46208; }
+.contactUs > .contactUsWord > input:nth-of-type(3):hover { border: 1.5px solid #f46208; color: #f46208; background: white; font-weight: bold; line-height: 37px;}
+
 /* footer区 */
-footer { width: 100%; height: 80px; background: #2e2e2e; text-align: center;
-line-height: 80px;color: #f5f5f5;}
+footer { width: 100%; height: 80px; background: #2e2e2e; text-align: center; line-height: 80px; color: #f5f5f5; }
