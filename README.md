@@ -5,3 +5,5 @@
 ## 3、[less案例](https://iharder.github.io/imooc-QD/less实战/index.html)
 
 ## 4、[fullpage案例](https://iharder.github.io/imooc-QD/fullpage实战/index.html)
+
+## 5、[钟表移动端案例](https://iharder.github.io/imooc-QD/钟表移动端/index.html)
