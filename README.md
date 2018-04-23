@@ -8,4 +8,4 @@
 
 ## 5、[钟表响应式案例](https://iharder.github.io/imooc-QD/钟表移动端/index.html)
 
-## 6、[网页定位导航案例](https://iharder.github.io/imooc-QD/网页定位导航/index.html) [JS实现](https://iharder.github.io/imooc-QD/网页定位导航/js实现/index.html)
+## 6、[网页定位导航案例](https://iharder.github.io/imooc-QD/网页定位导航/index.html)（[JS实现](https://iharder.github.io/imooc-QD/网页定位导航/JS实现/index.html)）
