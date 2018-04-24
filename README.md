@@ -9,3 +9,5 @@
 ## 5、[钟表响应式案例](https://iharder.github.io/imooc-QD/钟表移动端/index.html)
 
 ## 6、[网页定位导航案例](https://iharder.github.io/imooc-QD/网页定位导航/index.html)、[JS实现](https://iharder.github.io/imooc-QD/网页定位导航/JS实现/index.html)
+
+## 7、[CSS3网页平滑过渡案例(自适应)](https://iharder.github.io/imooc-QD/CSS3网页平滑/index.html)
