@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #333;
+}
+
+.box {
+    position: relative;
+    width: 800px;
+    height: 280px;
+    margin: 50px auto;
+}
+
+.box .link {
+    width: 205px;
+    height: 280px;
+    float: left;
+    margin: 0 20px;
+    position: relative;
+}
+
+.link .icon {
+    display: inline-block;
+    width: 100%;
+    height: 190px;
+    background: no-repeat center center;
+}
+
+.link .icon:hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.link-miss .icon {
+    background-image: url(../img/mission.png);
+}
+
+.link-play .icon {
+    background-image: url(../img/play.png);
+}
+
+.link-touch .icon {
+    background-image: url(../img/touch.png);
+}
+
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #2dcb70;
+    font-family: Arial;
+    font-weight: bolder;
+    border: 2px solid rgba(255, 255, 255, .8);
+    padding-left: 20px;
+    margin: 0 auto;
+    background: url(../img/allow.png) no-repeat 130px center;
+    cursor: pointer;
+    position: relative;
+}
+
+.link .button:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-position: 140px center;
+    transition: 0.4s ease;
+}
+
+.button .line {
+    display: block;
+    position: absolute;
+    background: none;
+    transition: .4s ease;
+}
+
+.button:hover .line {
+    background: #fff;
+}
+
+.button .line-top {
+    height: 2px;
+    width: 0px;
+    left: -110%;
+    top: -2px;
+}
+
+.button:hover .line-top {
+    width: 180px;
+    left: -2px;
+}
+
+.button .line-right {
+    height: 0;
+    width: 2px;
+    right: -2px;
+    top: -110%;
+}
+
+.button:hover .line-right {
+    height: 50px;
+    top: -2px;
+}
+
+.button .line-left {
+    height: 0;
+    width: 2px;
+    left: -2px;
+    bottom: -110%;
+}
+
+.button:hover .line-left {
+    height: 50px;
+    bottom: -2px;
+}
+
+.button .line-bottom {
+    height: 2px;
+    width: 0px;
+    right: -110%;
+    bottom: -2px;
+}
+
+.button:hover .line-bottom {
+    width: 180px;
+    right: -2px;
+}
+
+.tip {
+    position: absolute;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    background: #2dcb70;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    top: 100px;
+    width: 205px;
+    text-align: center;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.tip em {
+    font-style: normal;
+}
+
+.tip span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 7px solid transparent;
+    border-top-color: #2dcb70;
+    top: 35px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.button:hover + .tip{
+    opacity: 1;
+    top: 140px;
+}
