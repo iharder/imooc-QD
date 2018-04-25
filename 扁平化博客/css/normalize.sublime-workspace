@@ -1,0 +1,535 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"to",
+				"toolbar-layer"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"backgro",
+				"background-image"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"m",
+				"m"
+			],
+			[
+				"show",
+				"showTime"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"t",
+				"translateY()"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"listy",
+				"list-style"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"magi",
+				"margin-bottom"
+			],
+			[
+				"sc",
+				"seconds"
+			],
+			[
+				"A",
+				"auto"
+			],
+			[
+				"backgrou",
+				"background-size"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"full",
+				"fullPage"
+			],
+			[
+				"fullp",
+				"fullpage"
+			],
+			[
+				"layer",
+				"layer-mask"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"IMG",
+				"image"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"z",
+				"z-index"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <title>向上无缝滚动</title>\n    <style>\n    body {\n        font-size: 12px;\n        line-height: 24px;\n        text-algin: center;\n        /* 页面内容居中 */\n    }\n\n    * {\n        margin: 0px;\n        padding: 0px;\n        /*  去掉所有标签的marign和padding的值  */\n    }\n\n    ul {\n        list-style: none;\n        /*  去掉ul标签默认的点样式  */\n    }\n\n    a img {\n        border: none;\n        /*  超链接下，图片的边框  */\n    }\n\n    a {\n        color: #333;\n        text-decoration: none;\n        /* 超链接样式 */\n    }\n\n    a:hover {\n        color: #ff0000;\n    }\n\n    #mooc {\n        width: 399px;\n        border: 5px solid #ababab;\n        -moz-border-radius: 15px;\n        /* Gecko browsers */\n        -webkit-border-radius: 15px;\n        /* Webkit browsers */\n        border-radius: 15px;\n        box-shadow: 2px 2px 10px #ababab;\n        margin: 50px auto 0;\n        text-align: left;\n        /* 让新闻内容靠左 */\n    }\n    /*  头部样式 */\n\n    #moocTitle {\n        height: 62px;\n        overflow: hidden;\n        /* 这个一定要加上，内容超出的部分要隐藏，免得撑高头部 */\n        font-size: 26px;\n        line-height: 62px;\n        padding-left: 30px;\n        background-image: -moz-linear-gradient(top, #f05e6f, #c9394a);\n        /* Firefox */\n        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f05e6f), color-stop(1, #c9394a));\n        /* Saf4+, Chrome */\n        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fa1ff', endColorstr='#f05e6f', GradientType='0');\n        /* IE*/\n        border: 1px solid ##f05e6f;\n        -moz-border-radius: 8px 8px 0 0;\n        /* Gecko browsers */\n        -webkit-border-radius: 8px 8px 0 0;\n        /* Webkit browsers */\n        border-radius: 8px 8px 0 0;\n        color: #fff;\n        position: relative;\n    }\n\n    #moocTitle a {\n        position: absolute;\n        right: 10px;\n        bottom: 10px;\n        display: inline;\n        color: #fff;\n        font-size: 12px;\n        line-height: 24px;\n    }\n    /*  底部样式 */\n\n    #moocBot {\n        width: 399px;\n        height: 10px;\n        overflow: hidden;\n        /* 这个一定要加上，内容超出的部分要隐藏，免得撑高底部结构 */\n    }\n    /*  中间样式 */\n\n    #moocBox {\n        height: 144px;\n        width: 335px;\n        margin-left: 25px;\n        margin-top: 10px;\n        overflow: hidden;\n        /*  这个一定要加，超出的内容部分要隐藏，免得撑高中间部分 */\n    }\n\n    #mooc ul li {\n        height: 24px;\n    }\n\n    #mooc ul li a {\n        width: 180px;\n        float: left;\n        display: block;\n        overflow: hidden;\n        text-indent: 15px;\n        height: 24px;\n    }\n\n    #mooc ul li span {\n        float: right;\n        color: #999;\n    }\n    </style>\n</head>\n\n<body>\n    <!--  慕课网课程公告开始 -->\n    <div id=\"mooc\">\n        <!--  头部 -->\n        <h3 id=\"moocTitle\">最新课程<a href=\"#\" target=\"_self\">更多>></a> </h3>\n        <!--  头部结束 -->\n        <!--  中间 -->\n        <div id=\"moocBox\">\n            <ul id=\"con1\">\n                <li><a href=\"#\">1.学会html5 绝对的屌丝逆袭（案例）</a><span>2013-09-18</span></li>\n                <li><a href=\"#\">2.tab页面切换效果（案例）</a><span>2013-10-09</span></li>\n                <li><a href=\"#\">3.圆角水晶按钮制作（案例）</a><span>2013-10-21</span></li>\n                <li><a href=\"#\">4.HTML+CSS基础课程(系列)</a><span>2013-11-01</span></li>\n                <li><a href=\"#\">5.分页页码制作（案例）</a><span>2013-11-06</span></li>\n                <li><a href=\"#\">6.导航条菜单的制作（案例）</a><span>2013-11-08</span></li>\n                <li><a href=\"#\">7.信息列表制作(案例)</a><span>2013-11-15</span></li>\n                <li><a href=\"#\">8.下拉菜单制作(案例)</a><span>2013-11-22</span></li>\n                <li><a href=\"#\">9.如何实现“新手引导”效果</a><span>2013-12-06</span></li>\n            </ul>\n            <ul id=\"con2\">\n            </ul>\n        </div>\n        <!--  中间结束 -->\n    </div>\n    <!--  慕课网课程公告结束 -->\n    <script type=\"text/javascript\">\n    var area = document.getElementById('moocBox');\n    var con1 = document.getElementById('con1');\n    var con2 = document.getElementById('con2');\n    var speed = 50;\n    area.scrollTop = 0;\n    con2.innerHTML = con1.innerHTML;\n\n    function scrollUp() {\n        if (area.scrollTop >= con1.scrollHeight) {\n            area.scrollTop = 0;\n        } else {\n            area.scrollTop++;\n        }\n    }\n    var myScroll = setInterval(\"scrollUp()\", speed);\n    area.onmouseover = function() {\n        clearInterval(myScroll);\n    }\n    area.onmouseout = function() {\n        myScroll = setInterval(\"scrollUp()\", speed);\n    }\n    </script>\n</body>\n\n</html>",
+			"file": "/C/Users/Administrator/Desktop/任务/信息滚动条/index.html",
+			"file_size": 5167,
+			"file_write_time": 131686625509975093,
+			"settings":
+			{
+				"buffer_size": 4451,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Install Package Control"
+			]
+		],
+		"width": 490.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Administrator/Desktop/任务/信息滚动条"
+	],
+	"file_history":
+	[
+		"/C/Users/Administrator/Desktop/任务/CSS3网页平滑/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/预览图幻灯片/index.html",
+		"/C/Users/Administrator/Desktop/任务/按钮特效/index.html",
+		"/C/Users/Administrator/Desktop/任务/按钮特效/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/CSS3图片动态提示/index.html",
+		"/C/Users/Administrator/Desktop/任务/CSS3图片动态提示/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/CSS3照片墙/index.html",
+		"/C/Users/Administrator/Desktop/任务/倒计时/倒计时时差.html",
+		"/C/Users/Administrator/Desktop/任务/倒计时/index.html",
+		"/C/Users/Administrator/Desktop/任务/焦点图轮播/焦点图轮播效果(源代码)/demo.html",
+		"/C/Users/Administrator/Desktop/任务/tab页面布局/滑动切换/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/tab页面布局/滑动切换/index.html",
+		"/C/Users/Administrator/Desktop/任务/商城分类导航/index.html",
+		"/C/Users/Administrator/Desktop/任务/搜索框制作/index.html",
+		"/C/Users/Administrator/Desktop/任务/侧栏工具条/index.html",
+		"/C/Users/Administrator/Desktop/任务/侧栏工具条/less/style.less",
+		"/C/Users/Administrator/Desktop/任务/侧栏工具条/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/网页定位导航/index.html",
+		"/C/Users/Administrator/Desktop/任务/CSS动画/1嫦娥.html",
+		"/C/Users/Administrator/Desktop/任务/扁平化博客/index.html",
+		"/C/Users/Administrator/Desktop/任务/扁平化博客/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/瀑布流/js实现/js/script.js",
+		"/C/Users/Administrator/Desktop/任务/JS动画效果/JS透明度动画.html",
+		"/C/Users/Administrator/Desktop/任务/形形色色的下拉菜单/nav.html",
+		"/C/Users/Administrator/Desktop/任务/导航条菜单/学习/圆角菜单.html",
+		"/C/Users/Administrator/Desktop/任务/导航条菜单/学习/水平菜单.html",
+		"/C/Users/Administrator/Desktop/全桟路径/imooc/school/student.js",
+		"/C/Users/Administrator/Desktop/全桟路径/imooc/school/teacher.js",
+		"/C/Users/Administrator/Desktop/全桟路径/imooc/school/class.js",
+		"/C/Users/Administrator/Desktop/任务/less实战案例/source-dev/index.html",
+		"/C/Users/Administrator/Desktop/任务/信息排列/index.html",
+		"/C/Users/Administrator/Desktop/任务/图片缓慢缩放/index.html",
+		"/C/Users/Administrator/Desktop/任务/展开与收起/index.html",
+		"/C/Users/Administrator/Desktop/任务/图片剪切/index.html",
+		"/C/Users/Administrator/Desktop/任务/固定边栏滚动/固定边栏滚动特效（源代码）/固定边栏滚动-jq.htm",
+		"/C/Users/Administrator/Desktop/任务/固定边栏滚动/固定边栏滚动特效（源代码）/固定边栏滚动-js.htm",
+		"/C/Users/Administrator/Desktop/任务/网页广告/index.html",
+		"/C/Users/Administrator/Desktop/任务/弹出层/弹出层效果（源代码）/demo.html",
+		"/C/Users/Administrator/Desktop/任务/表单美化/index.html",
+		"/C/Users/Administrator/Desktop/任务/CSS3ToolTips/index.html",
+		"/C/Users/Administrator/Desktop/任务/CSS3ToolTips/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/ICON字体/cssSprite/index.html",
+		"/C/Users/Administrator/Desktop/任务/ICON字体/cssSprite/css/sprite.css",
+		"/C/Users/Administrator/Desktop/任务/ICON字体/cssSprite/js/sprite.js",
+		"/C/Users/Administrator/Desktop/任务/雪碧图/index.html",
+		"/C/Users/Administrator/Desktop/任务/新手引导/index.html",
+		"/C/Users/Administrator/Desktop/任务/信息滚动条/index.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DRa8356.5366/文字无缝滚动（源代码）.html",
+		"/C/Users/Administrator/Desktop/任务/CSS3网页平滑/index.html",
+		"/C/Users/Administrator/Desktop/任务/焦点图轮播/学习/index.html",
+		"/C/Users/Administrator/Desktop/任务/tab页面布局/滑动.html",
+		"/C/Users/Administrator/Desktop/任务/侧栏工具条/scss/style.less",
+		"/C/Users/Administrator/Desktop/任务/侧栏工具条/scss/style.scss",
+		"/D/koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb",
+		"/D/koala/rubygems/gems/sass-3.4.25/init.rb",
+		"/D/koala/rubygems/gems/sass-3.4.25/lib/sass.rb",
+		"/D/koala/rubygems/gems/sass-3.5.2/lib/sass.rb",
+		"/C/Users/Administrator/Desktop/demo.html",
+		"/C/Users/Administrator/Desktop/任务/CSS动画/index.html",
+		"/C/Users/Administrator/Desktop/任务/瀑布流/js实现/index.html",
+		"/C/Users/Administrator/Desktop/任务/JS动画效果/JS速度动画.html",
+		"/C/Users/Administrator/Desktop/任务/JS动画效果/1JS速度动画.html",
+		"/C/Users/Administrator/Desktop/任务/钟表移动端/index.html",
+		"/C/Users/Administrator/Desktop/任务/钟表移动端/css/index.css",
+		"/C/Users/Administrator/Desktop/任务/手风琴/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/手风琴/index.html",
+		"/C/Users/Administrator/Desktop/任务/js购物车/购物车（源代码）ok/购物车.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa10792.33385/demo.css",
+		"/C/Users/Administrator/Desktop/任务/网页广告/右下角广告（源代码）/右下角弹框.html",
+		"/C/Users/Administrator/Desktop/任务/表单美化/表单美化案例/单选框/radio.html",
+		"/C/Users/Administrator/Desktop/任务/表单美化/表单美化案例/单选框/css/public.css",
+		"/C/Users/Administrator/Desktop/任务/表单美化/表单美化案例/单选框/css/radip.css",
+		"/D/gaga-demo/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/回到顶部/index.html",
+		"/C/Users/Administrator/Desktop/任务/回到顶部/css/style.css",
+		"/D/gaga-demo/css/_gaga_temp/style.css",
+		"/C/Users/Administrator/Desktop/学习/插件/标准/index.html",
+		"/C/Users/Administrator/Desktop/任务/CSS3网页平滑/normalize.css",
+		"/C/Users/Administrator/Desktop/任务/商城分类导航/HTMLPage1.htm",
+		"/C/Users/Administrator/Desktop/学习/插件/fullpage模版/normalize.css",
+		"/C/Users/Administrator/Desktop/学习/插件/fullpage模版/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/瀑布流/源码/JavaScript/css/reset.css",
+		"/C/Users/Administrator/Desktop/任务/瀑布流/js实现/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/导航条菜单/学习/垂直菜单.html",
+		"/C/Users/Administrator/Desktop/钟表移动端/index.html",
+		"/C/Users/Administrator/Desktop/less实战案例源码/source-dev/index.html",
+		"/C/Users/Administrator/Desktop/less实战案例源码/source-dev/less/index.less",
+		"/C/Users/Administrator/Desktop/全桟路径/imooc/beginning/server.js",
+		"/C/Users/Administrator/Desktop/less实战案例源码/source-dev/css/index.css",
+		"/C/Users/Administrator/Desktop/钟表移动端/css/index.css",
+		"/C/Users/Administrator/Desktop/任务/瀑布流/js/index.html",
+		"/C/Users/Administrator/Desktop/任务/瀑布流/js/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/音视频/js/demo.js",
+		"/C/Users/Administrator/Desktop/全桟路径/前端/H5&JS进阶与组件化网页开发/HTML5进阶/HTML5存储/H5存储（源码）/demo/type.html",
+		"/C/Users/Administrator/Desktop/全桟路径/前端/H5&JS进阶与组件化网页开发/HTML5进阶/HTML5存储/H5存储（源码）/demo/index.html",
+		"/C/Users/Administrator/Desktop/全桟路径/前端/H5&JS进阶与组件化网页开发/HTML5进阶/HTML5存储/H5存储（源码）/demo/cache-storage-demo.html",
+		"/C/Users/Administrator/Desktop/全桟路径/前端/H5&JS进阶与组件化网页开发/HTML5进阶/HTML5存储/H5存储（源码）/demo/cache-storage.html",
+		"/C/Users/Administrator/Desktop/任务/音视频/js/script.js",
+		"/C/Users/Administrator/Desktop/index.html",
+		"/C/Users/Administrator/Downloads/企业/demo.html",
+		"/C/Users/Administrator/Downloads/53d5a06000015c9800000000/index.html",
+		"/C/Users/Administrator/Downloads/企业/index.html",
+		"/C/Users/Administrator/Desktop/任务/统一挂号平台源码/css/base.css",
+		"/C/Users/Administrator/Desktop/任务/企业网站/index.html",
+		"/C/Users/Administrator/Desktop/任务/fullpage实战/index.html",
+		"/C/Users/Administrator/Desktop/任务/fullpage实战/css/style.css",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/Administrator/Desktop/任务/企业网站/css/main.css",
+		"/C/Users/Administrator/Desktop/学习/作业集/前端/HTML案例/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/统一挂号平台源码/index.html",
+		"/C/Users/Administrator/Desktop/学习/作业集/前端/HTML5静态网页开发/css/style.css",
+		"/C/Users/Administrator/Desktop/任务/css3案例源码/css/dog.css",
+		"/C/Users/Administrator/Desktop/任务/css3案例源码/demo.html",
+		"/C/Users/Administrator/Desktop/任务/统一挂号平台源码/demo.html",
+		"/C/Users/Administrator/Desktop/任务/移动端案例（源码）/demo.html",
+		"/C/Users/Administrator/Desktop/学习/插件/fullpage模版/index.html",
+		"/C/Users/Administrator/Desktop/学习/插件/前端测试/index.html",
+		"/C/Users/Administrator/Desktop/任务/瀑布流布局案例（代码）/js/demo.js",
+		"/C/Users/Administrator/Desktop/任务/瀑布流布局案例（代码）/js/script.js",
+		"/C/Users/Administrator/Desktop/任务/音视频/demo.html",
+		"/C/Users/Administrator/Desktop/任务/移动端案例（源码）/index.html",
+		"/C/Users/Administrator/Desktop/任务/css3案例源码/display.html",
+		"/C/Users/Administrator/Desktop/学习/作业集/前端/HTML5静态网页开发/index.html",
+		"/C/Users/Administrator/Desktop/学习/作业集/前端/html5布局1/demo.html",
+		"/C/Users/Administrator/Desktop/杨进比赛基本样式/index.html",
+		"/C/Users/Administrator/Desktop/盔子/css/style.css",
+		"/C/Users/Administrator/Desktop/盔子/index.html",
+		"/C/Users/Administrator/Desktop/任务/jQuery弹出层案例源码/html/index.html"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 149.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mask",
+			"preson",
+			".nav__item",
+			"nav__item_icon_new",
+			".nav__item_icon_new",
+			"_",
+			"-",
+			".nav-site-category"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Administrator/Desktop/任务/信息滚动条/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3027,
+								3069
+							],
+							[
+								3107,
+								3148
+							],
+							[
+								3186,
+								3231
+							],
+							[
+								3269,
+								3308
+							],
+							[
+								3346,
+								3387
+							],
+							[
+								3425,
+								3464
+							],
+							[
+								3502,
+								3541
+							],
+							[
+								3579,
+								3620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5100.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 44.0
+	},
+	"input":
+	{
+		"height": 60.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "normalize.sublime-project",
+	"replace":
+	{
+		"height": 83.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
