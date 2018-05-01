@@ -1,0 +1,378 @@
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  position: relative;
+}
+.header .logo {
+  background: url("../img/logo.png") no-repeat center center;
+  background-size: cover;
+  width: 128px;
+  height: 40px;
+  margin: 11px 30px 0 32px;
+  float: left;
+}
+.header .nav {
+  height: 60px;
+  float: left;
+}
+.header .nav ul li {
+  position: relative;
+  float: left;
+}
+.header .nav ul li a {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 23px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+}
+.header .nav ul li:hover {
+  background-color: #363c41;
+}
+.header .nav ul li .icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("../img/icon-new.png") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+.header .profile {
+  margin-right: 20px;
+  float: right;
+}
+.header .profile__item {
+  width: 60px;
+  height: 60px;
+  float: right;
+  position: relative;
+}
+.header .profile__ava:before,
+.header .profile__notice:before,
+.header .profile__safe:before {
+  display: block;
+  content: '';
+}
+.header .profile__ava:before {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: url("../img/ava.jpg") no-repeat center center;
+  background-size: cover;
+}
+.header .profile__notice:before,
+.header .profile__safe:before {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  bottom: 19px;
+  left: 19px;
+  background: url("../img/icon-1-sprite_w22.png") no-repeat center center;
+  background-size: cover;
+}
+.header .profile__safe:before {
+  background-position: 0 -22px;
+}
+.header .profile__notice:before {
+  background-position: 0 -44px;
+}
+.header .search {
+  margin-right: 20px;
+  float: right;
+}
+.header .search__input {
+  position: relative;
+}
+.header .search__input input {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  width: 265px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #606468;
+  margin-top: 10px;
+  padding-left: 74px;
+}
+.header .search__input:before {
+  display: block;
+  content: '前端入门';
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2b333b;
+  color: #5c646b;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.header .search__input:after {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  bottom: 0;
+  left: 218px;
+  background: url("../img/icon-1-sprite_w22.png") no-repeat center center;
+  background-size: cover;
+  background-position: 0 0;
+}
+.banner {
+  width: 100%;
+  height: 560px;
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.recommend {
+  width: 100%;
+  height: 1000px;
+  background-color: #fff;
+  position: relative;
+}
+.recommend__wrap {
+  position: relative;
+  top: -120px;
+  width: 1210px;
+  margin: 0 auto;
+}
+.recommend__wrap .course:nth-child(2) .course__img {
+  background: url("../img/course2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(3) .course__img {
+  background: url("../img/course3.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(4) .course__img {
+  background: url("../img/course4.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(5) .course__img {
+  background: url("../img/course5.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(6) .course__img {
+  background: url("../img/course6.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(7) .course__img {
+  background: url("../img/course7.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(8) .course__img {
+  background: url("../img/course8.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course:nth-child(9) .course__img {
+  background: url("../img/course9.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course {
+  float: left;
+  margin: 0 22px 22px 0;
+  width: 286px;
+  height: 306px;
+  box-shadow: 0 8px 16px rgba(7, 17, 27, 0.2);
+  background-color: #fff;
+  position: relative;
+}
+.recommend__wrap .course:before {
+  content: ' ';
+  display: block;
+  width: 98%;
+  left: 1%;
+  bottom: -5px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(7, 17, 27, 0.2);
+}
+.recommend__wrap .course__img {
+  position: relative;
+  width: 286px;
+  height: 120px;
+  background: url("../img/course1.jpg") no-repeat center center;
+  background-size: cover;
+}
+.recommend__wrap .course__img:after {
+  display: block;
+  content: '';
+  width: 286px;
+  height: 20px;
+  background-image: url(../img/titlebg.png);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+.recommend__wrap .course__text {
+  position: relative;
+  padding: 0 26px 0;
+}
+.recommend__wrap .course__text_title {
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+}
+.recommend__wrap .course__text_dec {
+  font-size: 12px;
+  color: #959aa0;
+  position: absolute;
+  top: 64px;
+}
+.recommend__wrap .course__text_dec span {
+  padding-left: 1em;
+}
+.recommend__wrap .course__text_price {
+  color: red;
+  position: absolute;
+  top: 122px;
+}
+.recommend__wrap .course__text_price i {
+  font-style: normal;
+  vertical-align: super;
+  padding: 0 2px;
+}
+.recommend__wrap .course__text_hr {
+  background: #d9dde1;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  top: 60px;
+}
+.recommend__wrap .course:nth-child(4n) {
+  margin-right: 0;
+}
+.recommend__wrap .course:nth-child(9) {
+  left: 50%;
+  margin-left: -143px;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  position: relative;
+}
+.footer__link {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.footer__link ul :after:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+  zoom: 1;
+}
+.footer__link ul li {
+  float: left;
+}
+.footer__link ul li a {
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #959aa0;
+  padding-right: 28px;
+}
+.footer__copy {
+  width: 1200px;
+  margin: 0 auto;
+  height: 12px;
+  line-height: 12px;
+  padding: 10px 0 0 24px;
+  font-size: 12px;
+  color: #5c646b;
+}
+.footer__share {
+  display: block;
+  float: right;
+  position: relative;
+  right: 230px;
+  bottom: 31px;
+  width: 138px;
+  height: 31px;
+}
+.footer__share_weixin,
+.footer__share_weibo,
+.footer__share_qq {
+  float: right;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-image: url(../img/footer-sprite.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.footer__share_weixin_shade,
+.footer__share_weibo_shade,
+.footer__share_qq_shade {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+.footer__share_weixin:hover .footer__share_weixin_shade,
+.footer__share_weibo:hover .footer__share_weixin_shade,
+.footer__share_qq:hover .footer__share_weixin_shade {
+  background-color: transparent;
+  transition: all 1s;
+}
+.footer__share_weixin {
+  background-position: 0 -279px;
+}
+.footer__share_weixin:hover .footer__share_weixin_img {
+  opacity: 1;
+  background-color: transparent;
+}
+.footer__share_weixin_img {
+  width: 160px;
+  height: 220px;
+  background: url(../img/footer-sprite.png) no-repeat;
+  background-position: -2px -6px;
+  position: absolute;
+  top: -220px;
+  left: -70px;
+  opacity: 0;
+  transform-origin: center bottom;
+  transition: all .5s ease;
+}
+.footer__share_weibo {
+  background-position: 0 -322px;
+}
+.footer__share_qq {
+  background-position: 0 -363px;
+}
