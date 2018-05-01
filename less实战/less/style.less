@@ -1,0 +1,325 @@
+@import "function";
+//头部样式
+.header {
+    //基础布局 
+    #layout(header); // logo 
+    .logo {
+        #bg-img("logo.png");
+        #wh(128px, 40px);
+        margin: 11px 30px 0 32px;
+        .fl();
+    } //导航
+    .nav {
+        height: 60px;
+        .fl();
+        ul {
+            li {
+                position: relative;
+                a {
+                    #line-height(60px);
+                    padding: 0 23px;
+                    display: inline-block;
+                    #color(white);
+                    #ft-size(medium);
+                }
+                &:hover {
+                    #bg-color(light);
+                }
+                ;
+                .fl();
+                .icon {
+                    display: block;
+                    #square(14px);
+                    #bg-img("icon-new.png");
+                    position: absolute;
+                    top: 10px;
+                    right: 8px;
+                }
+            }
+        }
+    } //profile
+    .profile {
+        margin-right: 20px;
+        .fr();
+        &__item {
+            #square(60px);
+            .fr();
+            position: relative;
+        }
+        &__ava:before,
+        &__notice:before,
+        &__safe:before {
+            display: block;
+            content: '';
+        }
+        &__ava:before {
+            #square(40px);
+            border-radius: 50%;
+            #pt(absolute, 10px, 10px, 10px, 10px);
+            #bg-img("ava.jpg");
+        }
+        &__notice:before,
+        &__safe:before {
+            #square(22px);
+            #pt(absolute, 19px, 19px, 19px, 19px);
+            #bg-img("icon-1-sprite_w22.png");
+        }
+        &__safe:before {
+            background-position: 0 -22px;
+        }
+        &__notice:before {
+            background-position: 0 -44px;
+        }
+    }
+    .search {
+        margin-right: 20px;
+        .fr();
+        &__input {
+            position: relative;
+            input {
+                background: #000;
+                color: #fff;
+                #ft-size(medium);
+                #wh(265px, 40px);
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #606468;
+                margin-top: 10px;
+                padding-left: 74px;
+            }
+            &:before {
+                display: block;
+                content: '前端入门';
+                #wh(70px, 30px);
+                #pt(absolute, 10px, 0, 0, 0);
+                #bg-color(dark);
+                #color(dark);
+                #line-height(30px);
+                #ft-size(small);
+                text-align: center;
+            }
+            &:after {
+                display: block;
+                content: '';
+                #wh(22px, 22px);
+                #square(22px);
+                #pt(absolute, 15px, 0, 0, 218px);
+                #bg-img("icon-1-sprite_w22.png");
+                background-position: 0 0;
+            }
+        }
+    }
+}
+
+//导航样式
+.banner {
+    #layout(banner);
+}
+
+//推荐
+.recommend {
+    #layout(recommend);
+    &__wrap {
+        position: relative;
+        top: -120px;
+        width: 1210px;
+        margin: 0 auto;
+        .course:nth-child(2) {
+            .course__img {
+                #bg-img("course2.jpg");
+            }
+        }
+        .course:nth-child(3) {
+            .course__img {
+                #bg-img("course3.jpg");
+            }
+        }
+        .course:nth-child(4) {
+            .course__img {
+                #bg-img("course4.jpg");
+            }
+        }
+        .course:nth-child(5) {
+            .course__img {
+                #bg-img("course5.jpg");
+            }
+        }
+        .course:nth-child(6) {
+            .course__img {
+                #bg-img("course6.jpg");
+            }
+        }
+        .course:nth-child(7) {
+            .course__img {
+                #bg-img("course7.jpg");
+            }
+        }
+        .course:nth-child(8) {
+            .course__img {
+                #bg-img("course8.jpg");
+            }
+        }
+        .course:nth-child(9) {
+            .course__img {
+                #bg-img("course9.jpg");
+            }
+        }
+        .course {
+            .fl();
+            margin: 0 22px 22px 0;
+            #course-box(recommend);
+            position: relative;
+            &__img {
+                position: relative;
+                #wh(286px, 120px);
+                #bg-img("course1.jpg");
+                &:after {
+                    display: block;
+                    content: '';
+                    #wh(286px, 20px);
+                    background-image: url(../img/titlebg.png);
+                    background-color: rgba(255, 255, 255, .5);
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                }
+            }
+            &__text {
+                position: relative;
+                padding: 0 26px 0;
+                &_title {
+                    font-weight: bold;
+                    #ft-size(large);
+                    #line-height(25px);
+                }
+                &_dec {
+                    #ft-size(small);
+                    #color(weak);
+                    position: absolute;
+                    top: 64px;
+                    span {
+                        padding-left: 1em;
+                    }
+                }
+                &_price {
+                    #color(red);
+                    position: absolute;
+                    top: 122px;
+                    i {
+                        font-style: normal;
+                        vertical-align: super;
+                        padding: 0 2px;
+                    }
+                }
+                &_hr {
+                    background: #d9dde1;
+                    height: 1px;
+                    width: 100%;
+                    position: relative;
+                    top: 60px;
+                }
+            }
+        }
+        .course:nth-child(4n) {
+            margin-right: 0;
+        }
+        .course:nth-child(9) {
+            #center-h(286px);
+        }
+    }
+}
+
+//底部
+.footer {
+
+
+    #layout(footer);
+    &__link {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 24px;
+        ul {
+             :after {
+                .clearfix();
+            }
+            li {
+                .fl();
+                a {
+                    #line-height(12px);
+                    #ft-size(small);
+                    #color(weak);
+                    padding-right: 28px;
+                }
+            }
+        }
+    }
+    &__copy {
+        width: 1200px;
+        margin: 0 auto;
+        #line-height(12px);
+        padding: 10px 0 0 24px;
+        #ft-size(small);
+        #color(dark);
+    }
+    &__share {
+        display: block;
+        .fr();
+        position: relative;
+        right: 230px;
+        bottom: 31px;
+        width: 138px;
+        height: 31px;
+        &_weixin,
+        &_weibo,
+        &_qq {
+            .fr();
+            #square(31px);
+            border-radius: 50%;
+            margin: 0 6px;
+            background-image: url(../img/footer-sprite.png);
+            background-repeat: no-repeat;
+            position: relative;
+            &_shade {
+                position: absolute;
+                #square(31px);
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, .5);
+                left: 0;
+                top: 0;
+            }
+            &:hover {
+                .footer__share_weixin_shade {
+                    background-color: transparent;    
+                    transition: all 1s;
+                }
+            }
+        }
+        &_weixin {
+            &:hover {
+                .footer__share_weixin_img {
+                    opacity: 1;
+                    background-color: transparent;       
+                }
+            }
+            &_img {
+                width: 160px;
+                height: 220px;
+                background: url(../img/footer-sprite.png) no-repeat;
+                background-position: -2px -6px;
+                position: absolute;
+                top: -220px;
+                left: -70px;
+                opacity: 0;
+                transform-origin: center bottom;
+                transition: all .5s ease;               
+            }
+            background-position: 0 -279px;
+        }
+        &_weibo {
+            background-position: 0 -322px;
+        }
+        &_qq {
+            background-position: 0 -363px;
+        }
+    }
+}

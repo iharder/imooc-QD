@@ -1,0 +1,168 @@
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+
+// 布局样式
+#layout(@name) {
+    & when(@name=header) {
+    	width: 100%;
+        height: 60px;
+        #bg-color(black);
+    }
+    & when(@name=banner) {
+    	width: 100%;
+        height: 560px;
+        #bg-img("bg.jpg");
+    }
+    & when(@name=recommend) {
+    	width: 100%;
+        height: 1000px;
+        #bg-color(white);
+    }
+    & when(@name=footer) {
+    	width: 100%;
+        height: 100px;
+        #bg-color(black);
+    }
+}
+
+#layout(@name) {
+    position: relative;
+}
+
+#bg-color(@name) {
+    // 背景色定义
+    & when(@name=black) {
+        background-color: #000;
+    }
+    & when(@name=white) {
+        background-color: #fff;
+    }
+
+    & when(@name=dark) {
+        background-color: #2b333b;
+    }
+    & when(@name=light) {
+        background-color: #363c41;
+    }
+}
+
+#ft-size(@name) {
+    // 字体大小定义
+    & when(@name=small) {
+        font-size: 12px;
+    }
+    & when(@name=medium) {
+        font-size: 14px;
+    }
+    & when(@name=lagre) {
+        font-size: 16px;
+    }
+    & when(@name=title) {
+        font-size: 32px;
+    }
+    & when(@name=big) {
+        font-size: 22px;
+    }
+}
+
+#color(@name) {
+    //字体颜色定义
+    & when(@name=white) {
+        color: #fff;
+    }
+    & when(@name=dark) {
+        color: #5c646b;
+    }
+    & when(@name=red) {
+        color: red;
+    }
+    & when(@name=weak) {
+        color: #959aa0;
+    }
+}
+
+// 小样式定义
+#course-box(@name) {
+    & when(@name=recommend) {
+        width: 286px;
+        height: 306px;
+        box-shadow: 0 8px 16px rgba(7, 17, 27, .2);
+        background-color: #fff;
+        #decorate-bottom();
+    }
+}
+
+#decorate-bottom() {
+    &:before {
+        content: ' ';
+        display: block;
+        width: 98%;
+        left: 1%;
+        bottom: -5px;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0 8px 16px rgba(7, 17, 27, .2);
+    }
+}
+
+// 功能函数定义
+#square(@w: 10px) {
+    width: @w;
+    height: @w;
+}
+
+#pt(@position, @top, @right, @bottom, @left) {
+    position: @position;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+
+#bg-img(@src) {
+    background: url("../img/@{src}") no-repeat center center;
+    background-size: cover;
+}
+
+#center-h(@width) {
+    left: 50%;
+    margin-left: @width*-.5;
+}
+
+#line-height(@height) {
+    height: @height;
+    line-height: @height;
+}
+
+#wh(@width,@height) {
+    width: @width;
+    height: @height;
+}
+
+// 无参数函数定义
+.fl() {
+    float: left;
+}
+
+.fr() {
+    float: right;
+}
+
+.clearfix() {
+    &:after {
+        content: ' ';
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        clear: both;
+        zoom: 1;
+    }
+}

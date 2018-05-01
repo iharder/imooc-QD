@@ -4,211 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script type="text/javascript" src="js/less.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo"></div>
         <nav class="nav">
-            <a href="" class="nav__item">课程</a>
-            <a href="" class="nav__item nav__item__icon__new">职业路径</a>
-            <a href="" class="nav__item">实战</a>
-            <a href="" class="nav__item">猿问</a>
-            <a href="" class="nav__item">手记</a>
+            <ul>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业路径</a><span class="icon"></span></li>
+                <li><a href="#">实战</a></li>
+                <li><a href="#">猿问</a></li>
+                <li><a href="#">手记</a></li>
+            </ul>
         </nav>
         <div class="profile">
-            <div class="profile__item profile__phone"></div>
-            <div class="profile__item profile__message"></div>
-            <div class="profile__item profile__mail"></div>
             <div class="profile__item profile__ava"></div>
+            <div class="profile__item profile__notice"></div>
+            <div class="profile__item profile__safe"></div>
         </div>
         <div class="search">
-            <input type="text" class="search__input">
-            <a class="search__submit"></a>
+            <div class="search__input">
+                <input type="text">
+            </div>
         </div>
     </header>
     <div class="banner">
-        <div class="caption">
-            <span class="caption__text">一条通往有前途</span>
-            <img src="imgs/qiantu.png" alt="">
-            <span class="caption__text">的职业路径</span>
-        </div>
-        <div class="tips">
-            <div class="tips__item tips__item_i_1">
-                <div class="tips__title">更精简</div>
-                <div class="tips__text">只学必要内容</div>
-            </div>
-            <div class="tips__item tips__item_i_2">
-                <div class="tips__title">更聚焦</div>
-                <div class="tips__text">专注特定领域</div>
-            </div>
-            <div class="tips__item tips__item_i_3">
-                <div class="tips__title">更贴心</div>
-                <div class="tips__text">全程助教跟踪</div>
-            </div>
-        </div>
     </div>
     <div class="recommend">
-        <div class="recommend-course">
-            <div class="recommend-course__cover">
-                <img src="imgs/b1.jpg" alt="">
-            </div>
-            <div class="recommend-course__plan">
-                <h2 class="caption">HTML5与CSS3实现动态网页</h2>
-                <div class="recommend-course__times">
-                    24课
-                    <span class="recommend-course__person">106人在学</span>
-                </div>
-                <div class="recommend-course__desc">HTML5动态网页带你走进前端的世界！</div>
-            </div>
-            <div class="recommend-course__price">
-                <i>￥</i>399.00
-            </div>
-        </div>
-    </div>
-    <div class="courses">
-        <div class="courses__header">
-            <a class="courses__item">全部</a>
-            <a class="courses__item">前端开发</a>
-            <a class="courses__item">后端开发</a>
-            <a class="courses__item">移动开发</a>
-            <a class="courses__item">数据库</a>
-            <a class="courses__item">运维&测试</a>
-        </div>
-        <div class="courses__list">
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s1.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
+        <div class="recommend__wrap">
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">前端小白系列额课程</div>
+                    <div class="course__text_dec">33课
+                        <span>368人在学</span>
+                    </div>
+                    <div class="course__text_price"><i>￥</i>499.00</div>
                 </div>
             </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s2.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
-                </div>
-            </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s3.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">HTML5与CSS3实现动态网页系列课程</div>
+                    <div class="course__text_dec">24课
+                        <span>1031人在学</span>
+                    </div>
+                    <div class="course__text_price"><i>￥</i>599.00</div>
                 </div>
             </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s4.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
-                </div>
-            </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s5.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">PHP从零基础到原声项目开发系列课程</div>
+                    <div class="course__text_dec">16课
+                        <span>110人在学</span>
+                    </div>
+                    <div class="course__text_price"><i>￥</i>498.00</div>
                 </div>
             </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s6.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
-                </div>
-            </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s7.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">ECShop3从基本使用到二次开发系列课程</div>
+                    <div class="course__text_dec">11课
+                        <span>7人在学</span>
+                    </div>
+                    <div class="course__text_price"><i>￥</i>298.00</div>
                 </div>
             </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s8.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
-                </div>
-            </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s9.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">零基础入门Android语法与界面系列课程</div>
+                    <div class="course__text_dec">40课
+                        <span>442人在学</span>
+                    </div>
+                    <div class="course__text_hr"></div>
+                    <div class="course__text_price"><i>￥</i>399.00</div>
                 </div>
             </div>
-            <div class="standard-course">
-                <div class="standard-course__cover">
-                    <img src="imgs/s10.jpg" alt="">
-                </div>
-                <div class="standard-course__plan">
-                    <div class="standard-course__caption">SSH框架探幽</div>
-                    <div class="standard-course__category">Spring / Struts2 / Hibernate</div>
-                    <div class="standard-course__times">11课<span class="standard-course__person">792人学习</span></div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">Android网络与数据存储系列课程</div>
+                    <div class="course__text_dec">20课
+                        <span>54人在学</span>
+                    </div>
+                    <div class="course__text_hr"></div>
+                    <div class="course__text_price"><i>￥</i>599.00</div>
                 </div>
             </div>
-        </div>
-        <div class="pagination">
-            <a class="pagination__page pagination__page_status_disabled">首页</a>
-            <a class="pagination__page pagination__page_status_disabled">上一页</a>
-            <a class="pagination__number pagination__page pagination__page_status_current">1</a>
-            <a class="pagination__number pagination__page pagination__page_i_2">2</a>
-            <a class="pagination__number pagination__page pagination__page_i_3">3</a>
-            <a class="pagination__number pagination__page pagination__page_i_4">4</a>
-            <a class="pagination__number pagination__page pagination__page_i_5">5</a>
-            <a class="pagination__page">下一页</a>
-            <a class="pagination__page">尾页</a>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">Android从界面到数据存储系列课程</div>
+                    <div class="course__text_dec">36课
+                        <span>9人在学</span>
+                    </div>
+                    <div class="course__text_hr"></div>
+                    <div class="course__text_price"><i>￥</i>599.00</div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">Java基础语法与常用工具类系列课程</div>
+                    <div class="course__text_dec">27课
+                        <span>182人在学</span>
+                    </div>
+                    <div class="course__text_hr"></div>
+                    <div class="course__text_price"><i>￥</i>229.00</div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course__img"></div>
+                <div class="course__text">
+                    <div class="course__text_title">iOS基础语法（OC&Swift）与常用控件系列课程</div>
+                    <div class="course__text_dec">16课
+                        <span>122人在学</span>
+                    </div>
+                    <div class="course__text_hr"></div>
+                    <div class="course__text_price"><i>￥</i>299.00</div>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-link">
-            <div class="footer-link__item">网站首页</div>
-            <div class="footer-link__item">企业合作</div>
-            <div class="footer-link__item">人才招聘</div>
-            <div class="footer-link__item">联系我们</div>
-            <div class="footer-link__item">讲师招募</div>
-            <div class="footer-link__item">常见问题</div>
-            <div class="footer-link__item">意见反馈</div>
-            <div class="footer-link__item">慕课大学</div>
-            <div class="footer-link__item">友情链接</div>
+        <div class="footer__link">
+            <ul>
+                <li><a href="#">网站首页</a></li>
+                <li><a href="#">企业合作</a></li>
+                <li><a href="#">人才招聘</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">讲师招募</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">意见反馈</a></li>
+                <li><a href="#">慕课大学</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
         </div>
-        <div class="footer-copy">Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</div>
-        <div class="footer-share">
-            <a class="footer-share__item footer-share__item_i_1"></a>
-            <a class="footer-share__item footer-share__item_i_2"></a>
-            <a class="footer-share__item footer-share__item_i_3"></a>
-        </div>
+        <div class="footer__copy">Copyright &copy2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</div>
+        <div class="footer__share">
+            <span class="footer__share_weixin" >
+                <div class="footer__share_weixin_shade"></div>
+                <div class="footer__share_weixin_img"></div>
+            </span>
+            <span class="footer__share_weibo">
+                <div class="footer__share_weixin_shade"></div></span>
+            <span class="footer__share_qq">
+                <div class="footer__share_weixin_shade"></div></span>
     </footer>
 </body>
 
