@@ -1,0 +1,128 @@
+body,
+html {
+    background: #4876ef;
+}
+
+.wrapper {
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -250px;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    position: relative;
+    top: -30px;
+}
+
+.count {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.count form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.count form input {
+    display: block;
+    padding: 13px;
+    border: none;
+    box-shadow: 0 0 1px #999;
+}
+
+.count form input:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.count form input:nth-child(2) {
+    border-radius: 0 0 3px 3px;
+}
+
+.count form input:nth-child(3) {
+    margin-top: 20px;
+    background: #4876ef;
+    color: #fff;
+}
+
+.count div {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #666;
+}
+
+.count div span {
+    display: block;
+}
+
+footer ul {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ul li a {
+    display: block;
+}
+
+footer ul li a img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:420px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background: #4876ef;
+    }
+
+    header {
+        width: 100%;
+        height: 91px;
+        overflow: hidden;
+    }
+
+    header img {
+        position: relative;
+        top: 40px;
+    }
+
+    .count form input:nth-child(3) {
+        background: #00f;
+    }
+
+    .count div span {
+        display: block;
+        color: #fff;
+    }
+}
