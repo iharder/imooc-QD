@@ -6,7 +6,7 @@
 
 ## 4、[fullpage案例](https://iharder.github.io/imooc-QD/fullpage实战/index.html)
 
-## 5、[钟表响应式案例](https://iharder.github.io/imooc-QD/钟表移动端/index.html)
+## 5、[响应式01](https://iharder.github.io/imooc-QD/响应式布局/index.html)
 
 ## 6、[新手引导](https://iharder.github.io/imooc-QD/新手引导/index.html)
 
