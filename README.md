@@ -14,6 +14,6 @@
 
 ## 8、[CSS3按钮特效案例](https://iharder.github.io/imooc-QD/按钮特效/index.html)
 
-## 9、[扁平化博客案例](https://iharder.github.io/imooc-QD/扁平化博客/index.html)
+## 9、[移动端响应式01](https://iharder.github.io/imooc-QD/移动端响应式01/index.html)
 
 ## 10、[CSS3气泡特效](https://iharder.github.io/imooc-QD/CSS3气泡特效/index.html)
